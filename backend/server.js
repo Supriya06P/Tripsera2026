@@ -9,16 +9,16 @@ const axios = require('axios');
 const app = express();
 
 // --- MIDDLEWARE ---
-// app.use(cors({
-//     origin: ["https://your-frontend-domain.vercel.app", "http://localhost:3000"],
-//     methods: ["POST", "GET", "PUT", "DELETE", "OPTIONS"],
-//     credentials: true
-// }));
 app.use(cors({
-    origin: "*", // Allows any frontend to connect (Use this to test if it's working)
+    origin: ["https://your-frontend-domain.vercel.app", "http://localhost:3000"],
     methods: ["POST", "GET", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
+// app.use(cors({
+//     origin: "*", // Allows any frontend to connect (Use this to test if it's working)
+//     methods: ["POST", "GET", "PUT", "DELETE", "OPTIONS"],
+//     credentials: true
+// }));
 app.use(express.json());
 app.get('/', (req, res) => {
   res.send('🚀 Backend is running successfully!');
