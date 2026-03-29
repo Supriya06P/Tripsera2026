@@ -10,7 +10,7 @@ const app = express();
 
 // --- MIDDLEWARE ---
 app.use(cors({
-    origin: ["https://your-frontend-domain.vercel.app", "http://localhost:3000"],
+    origin: [ "http://localhost:3000"],
     methods: ["POST", "GET", "PUT", "DELETE", "OPTIONS"],
     credentials: true
 }));
