@@ -55,7 +55,7 @@ const TemplateEditor = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:5000/api/save-flyer', {
+      const response = await fetch('https://tripsera-2026.onrender.com/api/save-flyer', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(flyerData),
