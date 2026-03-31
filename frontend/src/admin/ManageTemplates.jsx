@@ -52,7 +52,7 @@ const ManageTemplates = () => {
   useEffect(() => {
     const fetchTemplates = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/flyers');
+        const response = await fetch('https://tripsera-2026.onrender.com/api/flyers');
         const data = await response.json();
         setTemplates(data);
       } catch (err) {
@@ -67,7 +67,7 @@ const ManageTemplates = () => {
   const handleDelete = async (id) => {
     if (!window.confirm("Are you sure you want to delete this template permanently?")) return;
     try {
-      const res = await fetch(`http://localhost:5000/api/flyers/${id}`, { method: 'DELETE' });
+      const res = await fetch(`https://tripsera-2026.onrender.com/api/flyers/${id}`, { method: 'DELETE' });
       if (res.ok) {
         setTemplates(templates.filter(t => t._id !== id));
         toast.success("Template removed successfully");
