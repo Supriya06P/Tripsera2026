@@ -85,8 +85,8 @@ const ManageTemplates = () => {
   return (
     <div className="relative min-h-screen bg-[#f8f7ff] p-8 overflow-hidden">
       {/* Background Blobs */}
-      <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] bg-purple-500/20 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-[-10%] left-[-5%] w-[30%] h-[30%] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-[-10%] right-[-10%] w-[40%] h-[50%] bg-purple-500/40 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[-10%] w-[30%] h-[50%] bg-indigo-500/40 rounded-full blur-[100px] pointer-events-none" />
 
       {/* Navbar Section */}
       <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-500 border-b border-purple-100/50 bg-white/70 backdrop-blur-md hover:bg-white/95 hover:shadow-lg group/nav">
